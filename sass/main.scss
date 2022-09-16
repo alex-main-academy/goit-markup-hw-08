@@ -1,0 +1,19 @@
+// global styles
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/hidden';
+
+
+// components
+@import './components/_header.scss';
+@import './components/logo';
+@import './components/solution';
+@import './components/feature';
+@import './components/doing';
+@import './components/team';
+@import './components/client';
+@import './components/work';
+@import './components/footer';
+@import './components/backdrop';
+@import './components/registration-form';
+

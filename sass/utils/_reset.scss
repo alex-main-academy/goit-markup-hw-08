@@ -1,0 +1,37 @@
+body {
+    color: var(--primary-color);
+    font-family: Roboto;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+button {
+    outline: none;
+}
+
+.title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.section {
+    padding: 94px 0;
+}
