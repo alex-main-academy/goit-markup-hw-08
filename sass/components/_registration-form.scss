@@ -7,10 +7,14 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
 
     margin-bottom: 12px;
+
+    @media screen and (min-width:1200px) {
+        line-height: 1.15;
+    }
 }
 
 .form-label {
@@ -48,9 +52,7 @@
 
     &:focus {
         border: 1px solid var(--accent-color);
-    }
-    &:focus+.form-input-icon {
-        fill: var(--accent-color);
+        color: var(--accent-color);
     }
 }
 
@@ -59,6 +61,7 @@
     position: absolute;
     bottom: 11px;
     left: 12px;
+    fill: currentColor;
 
     transition: fill var(--animation-time) var(--animation-timing)
 }
@@ -106,8 +109,8 @@
 }
 
 .form-agree-item {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 0.85;
 
     margin-left: 8px;
 
@@ -117,6 +120,10 @@
         text-underline-position: unset;
     }
     
+    @media screen and (min-width:1200px) {
+        line-height: 1.71;
+        font-size: 14px;
+    }
 }
 
 .form-submit {
@@ -139,8 +146,13 @@
     cursor: pointer;
     transition: background-color var(--animation-time) var(--animation-timing);
 
-    &:hover {
+    &:active {
         background-color: #188CE8;
+    }
+    @media screen and (min-width: 1200px) {
+        &:hover {
+            background-color: #188CE8;
+        }
     }
 }
 

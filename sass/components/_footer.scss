@@ -5,8 +5,30 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+
+    @media screen and (min-width:768px) and (max-width: 1199px){
+        padding-left: 76px;
+        padding-right: 89px;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 0;
+        justify-content: space-between;
+        align-items: baseline;
+        text-align: left;
+    }
 }
 
 .footer__logo {
@@ -21,13 +43,17 @@
 
 .nav__address {
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--white-color);
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .nav__list--footer {
@@ -55,7 +81,11 @@
 }
 
 .nav__item--footer:last-child {
-    margin-top: 9px;
+    margin-top: 8px;
+
+    @media screen and (min-width:1200px) {
+        margin-top: 9px;
+    }
 }
 
 .footer__title {
@@ -68,6 +98,7 @@
 
     margin-bottom: 20px;
 }
+
 
 .social__list {
     display: flex;
@@ -104,17 +135,30 @@
 }
 
 /* footer subscribe */
+.footer__subscribe {
+    width: 100%;
+
+    @media screen and (min-width:1200px) {
+        width: auto;
+    }
+}
 .subscribe__form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
+
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        gap: 12px;
+    }
 }
 .subscribe__input {
     display: block;
-
-    width: 358px;
+    
     height: 50px;
     padding: 0 16px;
+    width: 100%;
 
     font-size: 16px;
     line-height: 1.25;
@@ -125,6 +169,13 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width:768px) and (max-width: 1199px){
+        max-width: 450px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
 
 .subscribe__input::placeholder {

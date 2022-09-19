@@ -30,32 +30,40 @@
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
                 </ul>
+
+                <!-- menu burger for mobile -->
+                <button class="menu__open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" class="menu__open--icon">
+                        <use href="./images/icons.svg#icon-menu-burger"></use>
+                    </svg>
+                </button>
             </nav>
-            <a href="mailto:info@devstudio.com" class="header__contact">
-                <svg width="16" height="12" class="header__icon">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="header__contact">
-                <svg width="10" height="16" class="header__icon">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-            </a>
+            <div class="header__contacts">
+                <a href="mailto:info@devstudio.com" class="header__contact">
+                    <svg width="16" height="12" class="header__icon">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+                <a href="tel:+380961111111" class="header__contact">
+                    <svg width="10" height="16" class="header__icon">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="section solution">
             <div class="container">
-                <h1 class="solution__title title">Ефективні рішення для <br> вашого бізнесу</h1>
+                <h1 class="solution__title title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="solution__order" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
         <section class="section feature">
-            <!-- <h2 class="feature-title title">Наші переваги</h2> -->
             <div class="container">
                 <ul class="feature__list">
                     <li class="feature__item">
@@ -439,6 +447,33 @@
         </div>
     </div>
 
+    <!-- mobile menu -->
+    <div class="menu js-menu-container" id="mobile-menu">
+        <button class="menu__close js-close-menu" type="button">
+            <svg width="40" height="40" class="menu__close--icon">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+        <div class="menu__container">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+                <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+            </ul>
+            <div class="menu__contact">
+                <a href="tel:+380961111111" class="menu__phone">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a>
+            </div>
+            <ul class="menu__social">
+                <li class="menu__social--item"><a href="#" class="menu__social--link">Instagram</a></li>
+                <li class="menu__social--item"><a href="#" class="menu__social--link">Twitter</a></li>
+                <li class="menu__social--item"><a href="#" class="menu__social--link">Facebook</a></li>
+                <li class="menu__social--item"><a href="#" class="menu__social--link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
