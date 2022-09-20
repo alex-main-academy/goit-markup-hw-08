@@ -246,7 +246,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 40px;
+  padding: 48px 0 48px 40px;
   background-color: var(--white-color);
   -webkit-transition: 400ms;
   transition: 400ms;
@@ -333,6 +333,9 @@ button {
   -webkit-transition: color var(--animation-time) var(--animation-timing);
   transition: color var(--animation-time) var(--animation-timing);
 }
+.menu__link--active {
+  color: var(--accent-color);
+}
 .menu__link:active {
   color: var(--accent-color);
 }
@@ -342,7 +345,7 @@ button {
 }
 
 .menu__phone {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
@@ -352,7 +355,7 @@ button {
 }
 
 .menu__email {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
@@ -804,16 +807,28 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0;
 }
-
-.sort-item + .sort-item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .sort-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sort-list {
+    margin-bottom: 50px;
+  }
 }
 
 .sort-btn {
@@ -857,11 +872,28 @@ button {
 }
 
 .work__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .work__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .work__item-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -882,6 +914,8 @@ button {
 
 .work__item img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .work-image {
@@ -920,6 +954,9 @@ button {
 }
 
 .work__item .description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: none;

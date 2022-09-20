@@ -28,10 +28,10 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+                    <li class="nav__item"><a class="nav__link">Контакти</a></li>
                 </ul>
-                <button class="header__menu" type="button">
-                    <svg width="40" height="40" class="header__menu--icon">
+                <button class="menu__open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" class="menu__open--icon">
                         <use href="./images/icons.svg#icon-menu-burger"></use>
                     </svg>
                 </button>
@@ -67,7 +67,7 @@
 
                 <ul class="work__list">
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img7.jpg" alt="ноутбук з відкритим веб-сайтом" width="370">
                                 <div class="work-text">
@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img8.jpg" alt="два баскетболисти" width="370">
                                 <div class="work-text">
@@ -99,7 +99,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img9.jpg" alt="логотип компанії" width="370">
                                 <div class="work-text">
@@ -115,7 +115,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img10.jpg" alt="навушники" width="370">
                                 <div class="work-text">
@@ -132,7 +132,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img11.jpg" alt="дві коробочки" width="370">
                                 <div class="work-text">
@@ -149,7 +149,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img12.jpg" alt="монітор" width="370">
                                 <div class="work-text">
@@ -166,7 +166,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img13.jpg" alt="відкрита книга" width="370">
                                 <div class="work-text">
@@ -183,7 +183,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img14.jpg" alt="етикетка" width="370">
                                 <div class="work-text">
@@ -200,7 +200,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="#" class="work__item-link">
+                        <a class="work__item-link">
                             <div class="work-image">
                                 <img src="./images/img15.jpg" alt="робота за ПК" width="370">
                                 <div class="work-text">
@@ -241,28 +241,28 @@
                 <strong class="footer__title">приєднуйтесь</strong>
                 <ul class="social__list">
                     <li class="social__item">
-                        <a href="#" class="social__link">
+                        <a class="social__link">
                             <svg width="20" height="20" class="social__icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link">
+                        <a class="social__link">
                             <svg width="20" height="20" class="social__icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link">
+                        <a class="social__link">
                             <svg width="20" height="20" class="social__icon">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link">
+                        <a class="social__link">
                             <svg width="20" height="20" class="social__icon">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -284,6 +284,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- mobile menu -->
+    <div class="menu js-menu-container" id="mobile-menu">
+        <button class="menu__close js-close-menu" type="button">
+            <svg width="40" height="40" class="menu__close--icon">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+        <div class="menu__container">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+                <li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--active">Портфоліо</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+            </ul>
+            <div class="menu__contact">
+                <a href="tel:+380961111111" class="menu__phone">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a>
+            </div>
+            <ul class="menu__social">
+                <li class="menu__social--item"><a class="menu__social--link">Instagram</a></li>
+                <li class="menu__social--item"><a class="menu__social--link">Twitter</a></li>
+                <li class="menu__social--item"><a class="menu__social--link">Facebook</a></li>
+                <li class="menu__social--item"><a class="menu__social--link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/js/mobile-menu.js"></script>
 </body>
 
 </html>
