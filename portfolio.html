@@ -27,7 +27,8 @@
                 <a href="/" lang="en" class="logo header__logo"><span>Web</span>Studio</a>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
+                    </li>
                     <li class="nav__item"><a class="nav__link">Контакти</a></li>
                 </ul>
                 <button class="menu__open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
@@ -69,7 +70,37 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img7.jpg" alt="ноутбук з відкритим веб-сайтом" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-01_desk.webp 1x,
+                                        ./images/work/img-01_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-01_desk.jpg 1x,
+                                        ./images/work/img-01_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-01_tab.webp 1x,
+                                        ./images/work/img-01_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-01_tab.jpg 1x,
+                                        ./images/work/img-01_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-01_mob.webp 1x,
+                                        ./images/work/img-01_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-01_mob.jpg 1x,
+                                        ./images/work/img-01_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-01_mob.jpg" alt="ноутбук з відкритим веб-сайтом"
+                                        width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -85,7 +116,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img8.jpg" alt="два баскетболисти" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-02_desk.webp 1x,
+                                        ./images/work/img-02_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-02_desk.jpg 1x,
+                                        ./images/work/img-02_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-02_tab.webp 1x,
+                                        ./images/work/img-02_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-02_tab.jpg 1x,
+                                        ./images/work/img-02_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-02_mob.webp 1x,
+                                        ./images/work/img-02_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-02_mob.jpg 1x,
+                                        ./images/work/img-02_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-02_mob.jpg" alt="два баскетболисти грають" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -101,7 +161,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img9.jpg" alt="логотип компанії" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-03_desk.webp 1x,
+                                        ./images/work/img-03_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-03_desk.jpg 1x,
+                                        ./images/work/img-03_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-03_tab.webp 1x,
+                                        ./images/work/img-03_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-03_tab.jpg 1x,
+                                        ./images/work/img-03_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-03_mob.webp 1x,
+                                        ./images/work/img-03_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-03_mob.jpg 1x,
+                                        ./images/work/img-03_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-03_mob.jpg" alt="логотип компанії" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -117,7 +206,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img10.jpg" alt="навушники" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-04_desk.webp 1x,
+                                        ./images/work/img-04_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-04_desk.jpg 1x,
+                                        ./images/work/img-04_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-04_tab.webp 1x,
+                                        ./images/work/img-04_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-04_tab.jpg 1x,
+                                        ./images/work/img-04_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-04_mob.webp 1x,
+                                        ./images/work/img-04_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-04_mob.jpg 1x,
+                                        ./images/work/img-04_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-04_mob.jpg" alt="чорні навушники" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -134,7 +252,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img11.jpg" alt="дві коробочки" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-05_desk.webp 1x,
+                                        ./images/work/img-05_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-05_desk.jpg 1x,
+                                        ./images/work/img-05_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-05_tab.webp 1x,
+                                        ./images/work/img-05_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-05_tab.jpg 1x,
+                                        ./images/work/img-05_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-05_mob.webp 1x,
+                                        ./images/work/img-05_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-05_mob.jpg 1x,
+                                        ./images/work/img-05_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-05_mob.jpg" alt="дві коробочки" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -151,7 +298,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img12.jpg" alt="монітор" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-06_desk.webp 1x,
+                                        ./images/work/img-06_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-06_desk.jpg 1x,
+                                        ./images/work/img-06_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-06_tab.webp 1x,
+                                        ./images/work/img-06_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-06_tab.jpg 1x,
+                                        ./images/work/img-06_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-06_mob.webp 1x,
+                                        ./images/work/img-06_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-06_mob.jpg 1x,
+                                        ./images/work/img-06_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-06_mob.jpg" alt="монітор з веб-сайтом" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -168,7 +344,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img13.jpg" alt="відкрита книга" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-07_desk.webp 1x,
+                                        ./images/work/img-07_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-07_desk.jpg 1x,
+                                        ./images/work/img-07_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-07_tab.webp 1x,
+                                        ./images/work/img-07_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-07_tab.jpg 1x,
+                                        ./images/work/img-07_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-07_mob.webp 1x,
+                                        ./images/work/img-07_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-07_mob.jpg 1x,
+                                        ./images/work/img-07_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-07_mob.jpg" alt="відкрита книга" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -185,7 +390,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img14.jpg" alt="етикетка" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-08_desk.webp 1x,
+                                        ./images/work/img-08_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-08_desk.jpg 1x,
+                                        ./images/work/img-08_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-08_tab.webp 1x,
+                                        ./images/work/img-08_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-08_tab.jpg 1x,
+                                        ./images/work/img-08_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-08_mob.webp 1x,
+                                        ./images/work/img-08_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-08_mob.jpg 1x,
+                                        ./images/work/img-08_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-08_mob.jpg" alt="етикетка" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -202,7 +436,36 @@
                     <li class="work__item">
                         <a class="work__item-link">
                             <div class="work-image">
-                                <img src="./images/img15.jpg" alt="робота за ПК" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-09_desk.webp 1x,
+                                        ./images/work/img-09_desk@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:1200px)" srcset="
+                                        ./images/work/img-09_desk.jpg 1x,
+                                        ./images/work/img-09_desk@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-09_tab.webp 1x,
+                                        ./images/work/img-09_tab@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(min-width:768px)" srcset="
+                                        ./images/work/img-09_tab.jpg 1x,
+                                        ./images/work/img-09_tab@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <!-- Mobile screen -->
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-09_mob.webp 1x,
+                                        ./images/work/img-09_mob@2x.webp 2x,
+                                        " type="image/webp">
+                                    <source media="(max-width:767px)" srcset="
+                                        ./images/work/img-09_mob.jpg 1x,
+                                        ./images/work/img-09_mob@2x.jpg 2x,
+                                        " type="image/jpg">
+                                    <img src="./images/work/img-09_mob.jpg" alt="робота за комп'ютером" width="450">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -230,7 +493,8 @@
                         class="nav__address">м. Київ, пр-т Лесі Українки, 26</a>
                     <ul class="nav__list--footer">
                         <li class="nav__item--footer">
-                            <a href="mailto:info@devstudio.com" class="nav__contact">info@devstudio.com</a></li>
+                            <a href="mailto:info@devstudio.com" class="nav__contact">info@devstudio.com</a>
+                        </li>
                         <li class="nav__item--footer">
                             <a href="tel:+380961111111" class="nav__contact">+38 096 111 11 11</a>
                         </li>
@@ -295,7 +559,8 @@
         <div class="menu__container">
             <ul class="menu__list">
                 <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
-                <li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--active">Портфоліо</a></li>
+                <li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--active">Портфоліо</a>
+                </li>
                 <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
             </ul>
             <div class="menu__contact">
@@ -311,6 +576,9 @@
         </div>
     </div>
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="/js/mobile-menu.js"></script>
 </body>
 

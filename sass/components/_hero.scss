@@ -1,0 +1,108 @@
+.hero {
+    max-width: 1600px;
+    margin: auto;
+    padding: 118px 0;
+
+    background-color: rgb(47, 48, 58);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    // Mobile screen
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/back-mob.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/back-mob@2x.jpg);
+    }
+
+
+    // Tablet screen
+    @media screen and (min-width:481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/back-tab.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/back-tab@2x.jpg);
+        }
+    }
+
+    // Desktop screen
+    @media screen and (min-width:769px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/back-desk.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/back-desk@2x.jpg);
+        }
+
+        padding: 200px 0;
+    }
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    line-height: 1.61;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+
+    @media screen and (min-width:768px) {
+        width: 360px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 700px;
+        font-size: 44px;
+        line-height: 1.4;
+    }
+}
+
+.hero__order {
+    padding: 10px 32px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--animation-timing);
+
+    &:active {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (min-width:1200px) {
+        &:hover {
+            background-color: #188CE8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
