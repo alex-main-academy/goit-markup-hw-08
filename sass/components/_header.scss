@@ -98,7 +98,7 @@
     margin-bottom: 0;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
@@ -109,11 +109,24 @@
 
     @media screen and (min-width:1200px) {
         margin-left: auto;
+        font-size: 14px;
     }
 }
 
 .header__icon {
     fill: currentColor;
+}
+.header__icon--email {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 14px;
+        height: 10px;
+    }
+}
+.header__icon--phone {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 10px;
+        height: 14px;
+    }
 }
 
 .header__contact + .header__contact {

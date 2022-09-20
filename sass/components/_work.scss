@@ -106,7 +106,7 @@
         top: 0;
         left: 0;
     
-        padding: 63px 24px;
+        padding: 24px;
     
         content: '';
         display: block;
@@ -119,6 +119,10 @@
         transition-property: transform;
         transition-duration: var(--animation-time);
         transition-timing-function: var(--animation-timing);
+
+        @media screen and (min-width:480px) {
+            padding: 63px 24px;
+        }
     }
 }
 
@@ -128,9 +132,13 @@
         margin-top: 0;
         margin-bottom: 0;
     
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.55;
         color: var(--white-color);
+
+        @media screen and (min-width:480px) {
+            font-size: 18px;
+        }
     }
 }
 
